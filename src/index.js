@@ -5,14 +5,37 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import NotFound from './pages/NotFound';
+import Landing from './pages/Landing';
+import Game from './pages/Game';
+import ChooseWeather from './pages/ChooseWeather';
+import Score from './pages/Score';
+
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <NotFound />,
+    children: [
+      {index:true, element: <Landing />},
+      {path: 'choose', element: <ChooseWeather /> },
+      {path: 'game', element: <Game />},
+      {path: 'score', element:<Score />}
+    ]
+  
+
+  }
+]) 
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );
