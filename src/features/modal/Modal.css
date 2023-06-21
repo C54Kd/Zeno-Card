@@ -1,0 +1,51 @@
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+}
+
+.modalBody {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 80vh;
+  padding: 40px;
+  text-align: center;
+  background-color: #578787;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  z-index: 999;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: Times;
+  font-weight: bold;
+}
+
+.script {
+  margin-top: 10%;
+  height: 40vh;
+  line-height: 50px;
+  items-align: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.close {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Times;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}

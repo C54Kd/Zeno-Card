@@ -9,15 +9,15 @@ export default function Navbar() {
   const dispatch = useDispatch();
 
   return (
-    <header className="bg-hColor flex items-center">
+    <header className="bg-hColor flex items-center h-16">
       <Link to="/">
-        <AiTwotoneHome className="text-1xl text-dColor ml-2" />
+        <AiTwotoneHome className="text-2xl text-dColor ml-4" />
       </Link>
-      <h1 className="text-3xl font-bold text-dColor grow text-center">
-        Zeno-Card
+      <h1 className="text-4xl font-bold text-dColor grow text-center font-serif">
+        ZENO_CARD
       </h1>
 
-      <BsQuestionSquareFill className="text-1xl text-dColor mr-2" onClick={()=>{
+      <BsQuestionSquareFill className="text-2xl text-dColor mr-4" onClick={()=>{
         dispatch(onModal())
       }} />
     </header>
