@@ -1,0 +1,30 @@
+.currentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    text-align: center;
+    color: #003049;
+    font-weight: bold;
+}
+.cur {
+    text-align: center;
+    margin-bottom: 6vh;
+    color: #003049;
+    font-weight: bold;
+}
+.goToGame {
+        display: inline-block;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #003049;
+    color: #003049;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    margin: 5px;
+}

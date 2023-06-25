@@ -11,6 +11,7 @@ import Landing from './pages/Landing';
 import Game from './pages/Game';
 import ChooseWeather from './pages/ChooseWeather';
 import Score from './pages/Score';
+import CurrentWeather from './pages/CurrentWeather';
 
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
     children: [
       {index:true, element: <Landing />},
       {path: 'choose', element: <ChooseWeather /> },
+      {path: 'current', element: <CurrentWeather /> },
       {path: 'game', element: <Game />},
       {path: 'score', element:<Score />}
     ]

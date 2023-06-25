@@ -4,16 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        aColor: "#D2AE9E",
-        bColor: "#90A08C",
-        cColor: "#E46D4A",
-        dColor: "#EFD2C3",
-        eColor: "#DAC9BE",
-        fColor: "#FDCC8C",
-        gColor: "#86A5A8",
-        hColor: "#B04F43",
-        iColor: "#C07269",
-        jColor: "#578787"
+        aColor: "#003049",
+        bColor: "#d62828",
+        cColor: "#f77f00",
+        dColor: "#fcbf49",
+        eColor: "#eae2b7"
       },
     },
   },

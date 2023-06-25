@@ -1,10 +1,14 @@
-import React from 'react';
+import CardDetail from "../components/CardDetail";
+import FourStat from "../components/FourStat";
+
 
 export default function Game() {
-    return (
-        <div>
-            game!
-        </div>
-    );
-}
 
+
+  return (
+    <div>
+      <FourStat />
+      <CardDetail />
+    </div>
+  );
+}

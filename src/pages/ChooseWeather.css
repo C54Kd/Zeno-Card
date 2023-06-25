@@ -1,0 +1,39 @@
+.chooseMainContainer {
+    margin-top: 10vh;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.choose_script {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 8vh;
+    width: 80%;
+    color: #003049;
+    font-weight: bold;
+    line-height: 180%;
+}
+
+.weather_button {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+    justify-content: left;
+}
+.choose_button {
+
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: 1px solid #003049;
+    color: #003049;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}

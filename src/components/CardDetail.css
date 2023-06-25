@@ -1,0 +1,92 @@
+.cardContainer {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mainCard {
+  width: 250px;
+  height: 400px;
+  border: 1px solid #003049;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+  background-color: #f77f00;
+
+  text-align: center;
+  color: #003049;
+  font-weight: bold;
+
+  display:flex;
+  flex-direction: column;
+
+
+}
+
+.mainCard_title {
+  margin-top: 20%;
+  margin-bottom:10%;
+  font-size: 1.2rem;
+  color: #eae2b7;
+
+}
+.mainCard_script {
+  font-size: 1rem;
+
+}
+
+
+
+.left {
+  height: 400px;
+  flex: 1;
+  text-align: left;
+  color: #003049;
+  font-weight: bold;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding-bottom:10%;
+}
+.right {
+  height: 400px;
+  flex: 1;
+  text-align: right;
+  color: #003049;
+  font-weight: bold;
+
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding-bottom:10%;
+
+}
+
+.cardModal {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  min-width: 300px;
+  max-width: 600px;
+  height: 30vh;
+  min-height: 150px;
+  max-height: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+  z-index: 999;
+  color: red;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 998;
+}
