@@ -25,6 +25,7 @@
 }
 
 .title {
+  margin-top:1px;
   font-size: 2rem;
   font-family: Times;
   font-weight: bold;

@@ -6,6 +6,10 @@ import snow from "../decks/snow.json";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStat } from "../features/stat/statSlice";
 import { useNavigate } from "react-router-dom";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 export default function CardDetail() {
   const navigate = useNavigate();
@@ -32,16 +36,21 @@ export default function CardDetail() {
   const onModal = () => {
     setModal(!isModal);
   };
-  
-  const [gameOverMsg, setGameOverMsg] = useState('')
+
+  const [gameOverMsg, setGameOverMsg] = useState("");
   const getMinIdx = (arr) => arr.indexOf(Math.min(...arr));
   const [isGameOver, setGameOver] = useState(false);
   const onGameOver = (Idx) => {
     setGameOver(!isGameOver);
-    if(Idx === 0) setGameOverMsg("더 이상 힘이 없습니다. 눈 앞이 흐려집니다.")
-    else if(Idx === 1) setGameOverMsg("장비를 모두 잃었습니다. 손전등도 켤 수 없게 되자 어둠이 닥칩니다.");
-    else if(Idx === 2) setGameOverMsg("먹을 것이 없습니다. 배고픔에 쓰러집니다.");
-    else if(Idx === 3) setGameOverMsg("탄약이 모두 떨어진 그때, 늑대와 눈을 마주칩니다.")
+    if (Idx === 0) setGameOverMsg("더 이상 힘이 없습니다. 눈 앞이 흐려집니다.");
+    else if (Idx === 1)
+      setGameOverMsg(
+        "장비를 모두 잃었습니다. 손전등도 켤 수 없게 되자 어둠이 닥칩니다."
+      );
+    else if (Idx === 2)
+      setGameOverMsg("먹을 것이 없습니다. 배고픔에 쓰러집니다.");
+    else if (Idx === 3)
+      setGameOverMsg("탄약이 모두 떨어진 그때, 늑대와 눈을 마주칩니다.");
   };
 
   let oneCard = data.items[count];
@@ -64,7 +73,7 @@ export default function CardDetail() {
     dispatch(changeStat(prevStat));
 
     if (Math.min(...prevStat) === 0) {
-    let Idx = getMinIdx(prevStat);
+      let Idx = getMinIdx(prevStat);
 
       onGameOver(Idx);
     }
@@ -91,7 +100,7 @@ export default function CardDetail() {
     dispatch(changeStat(prevStat));
 
     if (Math.min(...prevStat) === 0) {
-    let Idx = getMinIdx(prevStat);
+      let Idx = getMinIdx(prevStat);
 
       onGameOver(Idx);
     }
@@ -119,13 +128,14 @@ export default function CardDetail() {
             leftClick();
           }}
         >
-          {oneCard.left[0]}
+          <BsFillArrowLeftCircleFill className="leftArrow" size={35} />
+          <div className="leftText">{oneCard.left[0]}</div>
+          
         </div>
         <div className="mainCard">
           <div className="mainCard_title">{oneCard.card}</div>
-          
+
           <div className="mainCard_script">{oneCard.card_script}</div>
-          
         </div>
 
         <div
@@ -134,24 +144,25 @@ export default function CardDetail() {
             rightClick();
           }}
         >
-          {oneCard.right[0]}
+          <BsFillArrowRightCircleFill className="rightArrow" size={35}  />
+          <div className="rightText">{oneCard.right[0]}</div>
         </div>
         {isModal && (
-        <div className="back">
-          <div
-            className="cardModal"
-            onClick={() => {
-              offModal();
-            }}
-          >
-            {isGameOver && <div>GAME OVER</div>}
-            {modalText}
-            {isGameOver && <div>{gameOverMsg}</div>}
+          <div className="back">
+            <div
+              className="cardModal"
+              onClick={() => {
+                offModal();
+              }}
+            >
+              {isGameOver && <div>GAME OVER</div>}
+              {isGameOver && <br></br>}
+              {modalText}
+              {isGameOver && <div>{gameOverMsg}</div>}
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
-      
     </>
   );
 }

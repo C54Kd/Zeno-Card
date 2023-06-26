@@ -49,7 +49,7 @@ export default function CurrentWeather() {
   return (
     <div className="currentContainer">
       {weatherNow === "" ? (
-        <div>🌧️실시간 서울의 날씨를 가져오는 중입니다🌞</div>
+        <div>🌧️ 실시간 서울의 날씨를 가져오는 중입니다 🌞</div>
       ) : (
         goToGameButton()
       )}
