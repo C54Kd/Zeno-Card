@@ -14,7 +14,7 @@ export default function Modal() {
         }}
       ></div>
       <div className="modalBody">
-        <div className="title">Game Rule</div>
+        <div className="title">🎲Game Rule👻</div>
         <div className="script">
           <ol>1. 게임 상황은 날씨에 따라 달라집니다.</ol>
           <ol>2. 매 턴마다 두 가지 선택지 중 하나를 선택해야 합니다.</ol>
