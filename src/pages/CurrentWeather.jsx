@@ -9,7 +9,7 @@ import { changeStat } from "../features/stat/statSlice";
 export default function CurrentWeather() {
     const dispatch = useDispatch();
     const [weatherNow, setWeatherNow] = useState("");
-  const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
+  const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY
   axios
     .get(
       `https://api.openweathermap.org/data/2.5/weather?lat=37.5&lon=127&appid=${apiKey}`
