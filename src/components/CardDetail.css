@@ -164,6 +164,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
   .rightText {
     position: relative;
     top: 25%;
