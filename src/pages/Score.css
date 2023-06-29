@@ -32,9 +32,9 @@
 
 .home_button {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   border-radius: 4px;
   background-color: #ffffff;
   border: 1px solid #003049;
@@ -47,3 +47,5 @@
   cursor: pointer;
   margin: 5px;
 }
+
+
