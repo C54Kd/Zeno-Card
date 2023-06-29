@@ -137,6 +137,7 @@ export default function CardDetail() {
           <BsFillArrowLeftCircleFill className="leftArrow" size={35} />
           <div className="leftText">{oneCard.left[0]}</div>
         </div>
+        <div className="blank_two"></div>
         <div
           className="right"
           onClick={() => {
