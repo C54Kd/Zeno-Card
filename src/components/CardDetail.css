@@ -6,44 +6,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
 }
 
-.blank {
-  display: none;
-}
-/* .cardContainer :nth-child(2) { order: -1; } */
-
-.blank_two {
-  display: block;
-  width: 250px;
-}
 .mainCard {
   min-width: 249px;
   width: 250px;
   height: 400px;
   border: 2px solid black;
-  /* box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15); */
-
   border-radius: 12px;
   background: linear-gradient(225deg, #002b42, #00334e);
   box-shadow: -12px 12px 24px #001d2d, 12px -12px 24px #004365;
-
   background-color: #003049;
-
   text-align: center;
   color: white;
   font-weight: bold;
-
   display: flex;
   flex-direction: column;
-
   padding-left: 10px;
   padding-right: 10px;
-
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 800;
 }
 
@@ -68,22 +49,19 @@
   text-align: center;
   color: #003049;
   font-weight: bold;
-  /* display:flex; */
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-
   padding-left: 10px;
   padding-right: 10px;
-
   color: #003049;
+  flex-wrap: wrap;
+
 }
 
 .leftArrow {
   position: relative;
   top: 40%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
 .leftText {
@@ -93,27 +71,24 @@
 
 .right {
   max-width: 300px;
-
   min-width: 150px;
   height: 400px;
   flex: 1;
   text-align: center;
   color: #003049;
   font-weight: bold;
-
   justify-content: center;
   align-items: center;
-
   padding-left: 10px;
   padding-right: 10px;
-
   color: #003049;
+  flex-wrap: wrap;
+
 }
 .rightArrow {
   position: relative;
   top: 40%;
   left: 50%;
-
   transform: translate(-50%, -50%);
 }
 .rightText {
@@ -153,91 +128,44 @@
   z-index: 998;
 }
 
-@media (max-width: 600px) {
-  .cardContainer {
-    width: 100vw;
-    height: 80vh;
+
+@media (max-width: 599px) {
+  .cardContainer > :nth-child(2) {
+    flex-basis: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-  }
-
-  .mainCard {
-    min-width: 249px;
-    width: 250px;
-    height: 400px;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 800;
-
-
-
-    
-
+    justify-content:center;
 
   }
+  .cardContainer > :first-child {
+    order: 1;
+    height:200px;
 
-  .blank {
-    display: block;
-    width: 80vw;
-    height: 400px;
-    margin-bottom: 5vh;
   }
+  .cardContainer > :last-child {
+    order: 2;
+    height:200px;
 
-  .blank_two {
-    display: none;
-  }
+  
 
-  .mainCard {
-    top: 370px;
   }
-
-  .right {
-    height: 150px;
-  }
-  .rightArrow {
-    position: relative;
-    top: 15%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-  }
-  .rightText {
-    position: relative;
-    top: 15%;
-  }
-
-  .left {
-    height: 150px;
-  }
-
   .leftArrow {
     position: relative;
-    top: 15%;
+    top: 25%;
     left: 50%;
-
     transform: translate(-50%, -50%);
   }
   .leftText {
     position: relative;
-    top: 15%;
+    top: 25%;
   }
-}
-
-
-@media (min-width: 600px) and (max-width: 1000px) {
- 
-
-  .mainCard {
-    position: absolute;
-    top: 40%;
+  .rightArrow {
+    position: relative;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 800;
+  }
+  .rightText {
+    position: relative;
+    top: 25%;
   }
 }

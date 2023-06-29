@@ -122,12 +122,6 @@ export default function CardDetail() {
   return (
     <>
       <div className="cardContainer">
-        <div className="blank"></div>
-
-        <div className="mainCard">
-          <div className="mainCard_title">{oneCard.card}</div>
-          <div className="mainCard_script">{oneCard.card_script}</div>
-        </div>
         <div
           className="left"
           onClick={() => {
@@ -137,7 +131,12 @@ export default function CardDetail() {
           <BsFillArrowLeftCircleFill className="leftArrow" size={35} />
           <div className="leftText">{oneCard.left[0]}</div>
         </div>
-        <div className="blank_two"></div>
+        <div className="mainCardContainer">
+          <div className="mainCard">
+            <div className="mainCard_title">{oneCard.card}</div>
+            <div className="mainCard_script">{oneCard.card_script}</div>
+          </div>
+        </div>
         <div
           className="right"
           onClick={() => {
