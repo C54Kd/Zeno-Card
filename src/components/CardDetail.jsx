@@ -122,6 +122,12 @@ export default function CardDetail() {
   return (
     <>
       <div className="cardContainer">
+        <div className="blank"></div>
+
+        <div className="mainCard">
+          <div className="mainCard_title">{oneCard.card}</div>
+          <div className="mainCard_script">{oneCard.card_script}</div>
+        </div>
         <div
           className="left"
           onClick={() => {
@@ -130,39 +136,37 @@ export default function CardDetail() {
         >
           <BsFillArrowLeftCircleFill className="leftArrow" size={35} />
           <div className="leftText">{oneCard.left[0]}</div>
-          
         </div>
-        <div className="mainCard">
-          <div className="mainCard_title">{oneCard.card}</div>
-
-          <div className="mainCard_script">{oneCard.card_script}</div>
-        </div>
-
         <div
           className="right"
           onClick={() => {
             rightClick();
           }}
         >
-          <BsFillArrowRightCircleFill className="rightArrow" size={35}  />
+          <BsFillArrowRightCircleFill className="rightArrow" size={35} />
           <div className="rightText">{oneCard.right[0]}</div>
         </div>
-        {isModal && (
-          <div className="back">
-            <div
-              className="cardModal"
-              onClick={() => {
-                offModal();
-              }}
-            >
-              {isGameOver && <div>GAME OVER</div>}
-              {isGameOver && <br></br>}
-              {modalText}
-              {isGameOver && <div>{gameOverMsg}</div>}
-            </div>
-          </div>
-        )}
       </div>
+      {isModal && (
+        <div
+          className="back"
+          onClick={() => {
+            offModal();
+          }}
+        >
+          <div
+            className="cardModal"
+            onClick={() => {
+              offModal();
+            }}
+          >
+            {isGameOver && <div>GAME OVER</div>}
+            {isGameOver && <br></br>}
+            {modalText}
+            {isGameOver && <div>{gameOverMsg}</div>}
+          </div>
+        </div>
+      )}
     </>
   );
 }
