@@ -19,8 +19,8 @@ export default function Score() {
         <div className="titleScore">최종 스코어는</div>
         <div className="score">{finalScore}</div>
       </div>
-      <Link to="/">
-        <button className="home_button">시작 화면으로</button>
+      <Link to="/" className="link">
+        <button className="toHome">시작 화면으로</button>
       </Link>
     </div>
   );
