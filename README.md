@@ -23,5 +23,7 @@ React, React-Hooks, React-router-dom, Redux-Toolkit, axios, OpenWeather API
 
 ## View
 
-![IMG_8633-sideqq](https://github.com/C54Kd/Zeno-Card/assets/112534895/1f9bafae-9752-494a-a457-14389066b1b6)
-![IMG_8637-side PNG](https://github.com/C54Kd/Zeno-Card/assets/112534895/5c58b610-d480-4ac7-b614-ed681fc340ef)
+![batch_IMG_8809-side](https://github.com/C54Kd/Zeno-Card/assets/112534895/5ab0cb31-b9f2-493d-aa3d-ca5c10987943)
+![batch_IMG_8807-side](https://github.com/C54Kd/Zeno-Card/assets/112534895/f4adfaf7-1bbb-4e6f-b7f6-458b79604a6a)
+
+
