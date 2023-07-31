@@ -19,7 +19,7 @@
   box-shadow: -12px 12px 24px #001d2d, 12px -12px 24px #004365;
   background-color: #003049;
   text-align: center;
-  color: white;
+  color: #eae2b7;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -47,13 +47,13 @@
   height: 400px;
   flex: 1;
   text-align: center;
-  color: #003049;
+  color: #eae2b7;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  color: #003049;
+
   flex-wrap: wrap;
 
 }
@@ -75,13 +75,13 @@
   height: 400px;
   flex: 1;
   text-align: center;
-  color: #003049;
+  color: #eae2b7;
   font-weight: bold;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-  color: #003049;
+
   flex-wrap: wrap;
 
 }

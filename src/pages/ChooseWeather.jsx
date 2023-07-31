@@ -25,6 +25,7 @@ export default function ChooseWeather() {
 
   return (
     <>
+    <div className="choose_back">
       <div className="chooseMainContainer">
         <div className="choose_script">
           당신은 멸망한 세상에서 살아남아야 합니다.<br></br>날씨에 따라 다른 상황의 카드가 나옵니다.
@@ -59,6 +60,7 @@ export default function ChooseWeather() {
           </div>
         </div>
       )}
+      </div>
     </>
   );
 }

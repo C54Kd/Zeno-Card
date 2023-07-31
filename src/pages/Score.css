@@ -1,15 +1,35 @@
 .scoreContainer {
-  margin-top: 20vh;
+  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #eae2b7;
+
+  background: linear-gradient(-45deg, #012539, #05334d, #031739, #1a063d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding-bottom: 25vh;
+}
+
+@keyframes gradient {
+  0% {
+   background-position: 0% 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+  100% {
+   background-position: 0% 50%;
+  }
 }
 
 .final {
   text-align: center;
   border-radius: 4px;
-  background-color: #ffffff;
-  color: #003049;
+  background-color: transparent;
+  color: #eae2b7;
   text-align: center;
   font-size: 17px;
   padding: 16px;
@@ -19,7 +39,8 @@
 .complete {
   text-align: center;
   font-size: 2rem;
-  color: #003049;
+  color: #eae2b7;
+
 }
 .titleScore {
   margin-top: 5vh;
@@ -38,9 +59,9 @@
 
 
   border-radius: 4px;
-  background-color: #ffffff;
-  border: 1px solid #003049;
-  color: #003049;
+  background-color: #003049;
+  border: 1px solid  #eae2b7;
+  color: #eae2b7;
   text-align: center;
   font-size: 17px;
   padding: 16px;

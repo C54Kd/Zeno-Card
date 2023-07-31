@@ -1,5 +1,28 @@
+.choose_back {
+    padding-top:10vh;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;
+    background: linear-gradient(-45deg, #012539, #05334d, #031739, #1a063d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding-bottom: 25vh;
+}
+
+@keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+    50% {
+     background-position: 100% 50%;
+    }
+    100% {
+     background-position: 0% 50%;
+    }
+}
+
 .chooseMainContainer {
-    margin-top: 10vh;
+
     height: 25vh;
     display: flex;
     flex-direction: column;
@@ -11,7 +34,7 @@
     font-size: 17px;
     margin-bottom: 8vh;
     width: 80%;
-    color: #003049;
+    color: #eae2b7;
     font-weight: bold;
     line-height: 180%;
 }
@@ -26,9 +49,9 @@
 .choose_button {
 
     border-radius: 4px;
-    background-color: #FFFFFF;
-    border: 1px solid #003049;
-    color: #003049;
+    background-color: #003049;
+    border: 1px solid #eae2b7;
+    color: #eae2b7;
     text-align: center;
     font-size: 17px;
     padding: 16px;
