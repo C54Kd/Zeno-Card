@@ -6,7 +6,6 @@
   width: 100vw;
   height: 100vh;
   color: #eae2b7;
-
   background: linear-gradient(-45deg, #012539, #05334d, #031739, #1a063d);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -56,8 +55,6 @@
 }
 
 .toHome {
-
-
   border-radius: 4px;
   background-color: #003049;
   border: 1px solid  #eae2b7;

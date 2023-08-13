@@ -41,34 +41,7 @@
   font-size: 1rem;
 }
 
-.left {
-  max-width: 300px;
-  min-width: 150px;
-  height: 400px;
-  flex: 1;
-  text-align: center;
-  color: #eae2b7;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  flex-wrap: wrap;
-
-}
-
-.leftArrow {
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.leftText {
-  position: relative;
-  top: 45%;
-}
-
+.left,
 .right {
   max-width: 300px;
   min-width: 150px;
@@ -81,16 +54,17 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
-
   flex-wrap: wrap;
-
 }
+
+.leftArrow,
 .rightArrow {
   position: relative;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.leftText,
 .rightText {
   position: relative;
   top: 45%;
@@ -128,43 +102,28 @@
   z-index: 998;
 }
 
-
 @media (max-width: 599px) {
   .cardContainer > :nth-child(2) {
     flex-basis: 100%;
     display: flex;
-    justify-content:center;
-
+    justify-content: center;
   }
   .cardContainer > :first-child {
     order: 1;
-    height:200px;
-
+    height: 200px;
   }
   .cardContainer > :last-child {
     order: 2;
-    height:200px;
-
-  
-
+    height: 200px;
   }
-  .leftArrow {
-    position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .leftText {
-    position: relative;
-    top: 25%;
-  }
+  .leftArrow,
   .rightArrow {
     position: relative;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+  .leftText,
   .rightText {
     position: relative;
     top: 25%;
