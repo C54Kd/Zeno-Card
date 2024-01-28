@@ -6,7 +6,7 @@ Zeno_Card는 포스트아포칼립스에서 살아남아야 하는 선택형 카
 
 ## 배포링크
 
-https://adorable-starship-9c84c3.netlify.app/
+https://zeno-card.netlify.app/
 
 
 ## Stack
