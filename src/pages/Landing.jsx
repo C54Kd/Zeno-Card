@@ -31,7 +31,7 @@ export default function Landing() {
           How to play
         </button>
       </div>
-      <div className="footer">Frontend developer kim ho jin</div>
+      <div className="footer">Developer kim ho jin</div>
     </>
   );
 }
